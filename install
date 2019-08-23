@@ -1,0 +1,89 @@
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.1/ripgrep_11.0.1_amd64.deb
+sudo dpkg -i ripgrep_11.0.1_amd64.deb
+
+#Setup languageservers for those of us that use semantic completions 
+
+sudo apt -y install npm
+sudo npm install -g vscode-html-languageserver-bin
+sudo npm install -g vscode-css-languageserver-bin
+sudo npm install -g vscode-json-languageserver-bin
+npm install -g flow-bin
+#flow lsp to rc
+gem install solargraph
+#"solargraph stdio to rc
+
+sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
+sudo apt-get update
+sudo apt-get -y install vim-gtk xclip autossh rcm zsh libidn11-dev libldap2-dev
+graphviz
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+cd ~/.rbenv
+git pull
+
+rvm autolibs enable
+rvm install 2.3.8
+rvm install 2.4.4
+rvm install 2.5.0
+
+mkdir ~/intellum
+cd ~/intellum
+git clone git@github.com:intellum/exceed.git
+git clone git@github.com:intellum/level.git
+
+git clone git@github.com:intellum/tribe.git
+cd tribe
+ gem install bundler -v '1.17.3'
+ bundle install
+ bundle exec rake db:migrate
+cd ~/intellum
+
+git clone git@github.com:intellum/github_dashboard.git
+git clone git@github.com:intellum/exceed.wiki.git
+cd ~
+git clone git@github.com:mtuckerb/dotfiles.git .dotfiles
+sh -c "$(curl -fsSL
+https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/romkatv/powerlevel10k.git
+$ZSH_CUSTOM/themes/powerlevel10k
+rcup -d .dotfiles
+
+
+sudo cat > /etc/apache2/sites-available/ghdb.conf
+<VirtualHost *:80>
+  ServerName tucker.ghdb.intellum.com
+  ServerAlias ghdb.intellum-dev.ngrok.io
+  DocumentRoot /home/rbadmin/intellum/github_dashboard/public
+  RailsEnv development
+  RackEnv development
+  PassengerDefaultRuby /home/rbadmin/.rbenv/shims/ruby
+
+  <Directory /home/rbadmin/intellum/github_dashboard/public>
+      Options +FollowSymLinks -MultiViews
+      Require all granted
+      AllowOverride All
+      Order deny,allow
+      Allow from all
+  </Directory>
+
+</VirtualHost>
+
+sudo cat > /etc/apache2/sites-available/level.conf
+<VirtualHost *:80>
+  ServerName tucker.intellumlevel-staging.com
+  ServerAlias *.tucker.intellumlevel-staging.com
+  DocumentRoot /home/rbadmin/intellum/level/public
+  RailsEnv development
+  RackEnv development
+  PassengerDefaultRuby /home/rbadmin/.rbenv/shims/ruby
+
+  <Directory /home/rbadmin/intellum/level/public>
+      Options +FollowSymLinks -MultiViews
+      Require all granted
+      AllowOverride All
+      Order deny,allow
+      Allow from all
+  </Directory>
+
+</VirtualHost>
+
