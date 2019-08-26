@@ -12,7 +12,7 @@ npm install -g flow-bin
 gem install solargraph
 #"solargraph stdio to rc
 
-sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
+sudo add-apt-repository  -y ppa:martin-frost/thoughtbot-rcm
 sudo apt-get update
 sudo apt-get -y install vim-gtk xclip autossh rcm zsh libidn11-dev libldap2-dev
 graphviz
