@@ -1,48 +1,45 @@
+sudo apt-get update -y
+
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.1/ripgrep_11.0.1_amd64.deb
 sudo dpkg -i ripgrep_11.0.1_amd64.deb
 
-#Setup languageservers for those of us that use semantic completions 
+#Setup languageservers for those of us that use semantic completions
 
-sudo apt -y install npm
+sudo apt-get install -y npm
 sudo npm install -g vscode-html-languageserver-bin
 sudo npm install -g vscode-css-languageserver-bin
 sudo npm install -g vscode-json-languageserver-bin
 npm install -g flow-bin
 #flow lsp to rc
-gem install solargraph
+gem install solargraph --no-document
 #"solargraph stdio to rc
 
-sudo add-apt-repository  -y ppa:martin-frost/thoughtbot-rcm
-sudo apt-get update
+sudo add-apt-repository -y ppa:martin-frost/thoughtbot-rcm
 sudo apt-get -y install vim-gtk xclip autossh rcm zsh libidn11-dev libldap2-dev graphviz
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-cd ~/.rbenv
-git pull
 
-rvm autolibs enable
-rvm install 2.3.8
 rvm install 2.4.4
 rvm install 2.5.0
 
-mkdir ~/intellum
+mkdir -p ~/intellum
 cd ~/intellum
-git clone git@github.com:intellum/exceed.git
+
+ln -nsf exceed ~/exceed
+
 git clone git@github.com:intellum/level.git
 
 git clone git@github.com:intellum/tribe.git
 cd tribe
- gem install bundler -v '1.17.3'
- bundle install
- bundle exec rake db:migrate
+gem install bundler -v '1.17.3'
+bundle install
+bundle exec rake db:migrate
+
 cd ~/intellum
 
 git clone git@github.com:intellum/github_dashboard.git
 git clone git@github.com:intellum/exceed.wiki.git
+
 cd ~
 git clone git@github.com:mtuckerb/dotfiles.git .dotfiles
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 yes | rcup -d .dotfiles
-
-
