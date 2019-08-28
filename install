@@ -41,7 +41,7 @@ git clone git@github.com:intellum/github_dashboard.git
 git clone git@github.com:intellum/exceed.wiki.git
 cd ~
 git clone git@github.com:mtuckerb/dotfiles.git .dotfiles
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 yes | rcup -d .dotfiles
 
