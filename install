@@ -7,7 +7,7 @@ sudo dpkg -i ripgrep_11.0.1_amd64.deb
 
 #Setup languageservers for those of us that use semantic completions
 
-sudo apt-get install -y npm git-lfs yes
+sudo apt-get install -y npm git-lfs exuberant-ctags
 sudo npm install -g vscode-html-languageserver-bin
 sudo npm install -g vscode-css-languageserver-bin
 sudo npm install -g vscode-json-languageserver-bin
