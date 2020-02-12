@@ -13,7 +13,7 @@ sudo npm install -g vscode-css-languageserver-bin
 sudo npm install -g vscode-json-languageserver-bin
 sudo npm install -g flow-bin
 #flow lsp to rc
-gem install solargraph --no-document
+gem install m solargraph --no-document
 #"solargraph stdio to rc
 
 
