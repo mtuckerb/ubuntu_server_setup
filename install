@@ -23,26 +23,13 @@ sudo apt-get -y install ./keybase_amd64.deb
 sudo add-apt-repository -y ppa:martin-frost/thoughtbot-rcm
 sudo apt-get -y install autossh rcm zsh libidn11-dev libldap2-dev graphviz
 
-rvm install 2.4.4
-rvm install 2.5.0
-
-mkdir -p ~/intellum
-# These next lines were for the old dev env, and might be needed again for a specialized box
-#cd ~/intellum
-#ln -nsf exceed ~/exceed
-#git clone git@github.com:intellum/level.git
-#git clone git@github.com:intellum/tribe.git
-#cd tribe
-#gem install bundler -v '1.17.3'
-#bundle install
-#bundle exec rake db:migrate
-# cd ~/intellum
+cd ~
 
 git clone git@github.com:intellum/github_dashboard.git
 git clone git@github.com:intellum/exceed.wiki.git
-cd ~
-
 git clone git@github.com:mtuckerb/dotfiles.git .dotfiles
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
+yes | rcup -d ~/.dotfiles
+. ~/.zshrc
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-yes | rcup -d .dotfiles
