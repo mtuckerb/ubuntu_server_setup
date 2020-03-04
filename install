@@ -25,10 +25,7 @@ sudo apt-get -y install autossh rcm zsh libidn11-dev libldap2-dev graphviz
 
 cd ~
 
-git clone git@github.com:intellum/github_dashboard.git
-git clone git@github.com:intellum/exceed.wiki.git
 git clone git@github.com:mtuckerb/dotfiles.git .dotfiles
-
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
 yes | rcup -d ~/.dotfiles
 git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
