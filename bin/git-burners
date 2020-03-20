@@ -1,0 +1,38 @@
+#!/bin/bash
+#
+# show who has the most lines of codes to their name
+#
+
+status=
+exclude=
+while [ "$1" != "" ]; do
+    case $1 in
+        -x | --exclude )        shift
+                                exclude=$1
+                                ;;
+    esac
+    shift
+done
+
+grep_opts="."
+
+if [ -n "$exclude" ] ; then
+    grep_opts="-v $exclude"
+fi
+
+
+#git ls-files -z | grep $grep_opts | xargs -0 -n 1 | while read line;
+git ls-files | grep $grep_opts | while read line;
+do
+    # git annotate -b -- "${line}";
+    git blame -C -w -- "${line}";
+    # regex from http://gitorious.org/joenio/misc/blobs/master/git-blame-stats
+done | perl -pe "s[^.*?\((.*?)\s*\d{4}-\d{2}-\d{2}.*][\1]" | sort | uniq -c | sort -n
+
+
+#IFS=''
+#git ls-files | grep $grep_opts | while read line;
+#do
+#		git blame -f -e -- "\"${line}\"";
+#done | awk '{print $3 }' | sort |perl -pe "s/\(\<(.+\@.+)\>+/\1/; " | uniq -c | sort -n
+#unset IFS

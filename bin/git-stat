@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# needs "ack" installed. which you should have anyway
+#  it's handy
+
+# show the normal modified/etc
+git status -uno
+
+# list of everything like looks like a commonly known
+# source code file
+ack -f | awk '{print $1"$"}' > /tmp/.sources
+
+# find the source looking files in git status output 
+echo "# These look like untracked source code"
+echo "#"
+
+
+git status -u --porcelain | grep "^??" | grep  -f /tmp/.sources | while read line;
+do
+    echo -e "#\t${line##??}"
+done
+echo "#"
