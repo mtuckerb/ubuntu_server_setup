@@ -1,6 +1,7 @@
 cd ~
 git clone git@github.com:intellum/github_dashboard.git
 git clone git@github.com:intellum/exceed.wiki.git
+git clone git@github.com:intellum/client_engineering.git
 keybase login
 run_keybase
 rsync -var /keybase/private/mtuckerb/github_dashboard/ ~/github_dashboard
