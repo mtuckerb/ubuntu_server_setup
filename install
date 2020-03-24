@@ -7,11 +7,18 @@ sudo dpkg -i ripgrep_11.0.1_amd64.deb
 
 #Setup languageservers for those of us that use semantic completions
 
+
 sudo apt-get install -y npm git-lfs exuberant-ctags libcurl4-gnutls-dev
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+
 sudo npm install -g vscode-html-languageserver-bin
 sudo npm install -g vscode-css-languageserver-bin
 sudo npm install -g vscode-json-languageserver-bin
 sudo npm install -g flow-bin
+sudo npm install -g prettier
+sudo npm install -g @prettier/plugin-ruby
 #flow lsp to rc
 gem install m solargraph --no-document
 #"solargraph stdio to rc
