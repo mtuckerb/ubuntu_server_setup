@@ -5,3 +5,4 @@ keybase login
 run_keybase
 rsync -var /keybase/private/mtuckerb/github_dashboard/ ~/github_dashboard
 rsync -var /keybase/private/mtuckerb/ssh/ ~/.ssh
+rcup -d ~/.dotfiles
