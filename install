@@ -27,7 +27,7 @@ rvm install "ruby-2.5.0"
 cd ~
 
 git clone git@github.com:mtuckerb/dotfiles.git .dotfiles
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended --nochsh
 yes | rcup -d ~/.dotfiles
 git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
 sudo chsh -s /usr/bin/zsh ubuntu
