@@ -1,3 +1,4 @@
+mkdir $HOME/bin
 sudo apt remove --assume-yes vim-tiny
 sudo add-apt-repository -y  ppa:jonathonf/vim
 sudo apt-get update -y
@@ -26,6 +27,9 @@ gem install m solargraph --no-document
 
 curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
 sudo apt-get -y install ./keybase_amd64.deb
+curl --remote-name https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+unzip ngrok-stable-linux-amd64.zip
+mv ngrok $HOME/bin
 
 sudo add-apt-repository -y ppa:martin-frost/thoughtbot-rcm
 sudo apt-get -y install autossh rcm zsh libidn11-dev libldap2-dev graphviz
