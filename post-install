@@ -14,4 +14,4 @@ cd $HOME/github_dashboard
 bundle exec rails db:create
 bundle exec rails db:migrate
 bundle exec rails db:data:load
-
+bundle exec rake graphql:schema:update
