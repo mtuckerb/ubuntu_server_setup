@@ -1,10 +1,17 @@
 cd ~
+keybase login
+run_keybase
+rcup -d ~/.dotfiles
+
 git clone git@github.com:intellum/github_dashboard.git
 git clone git@github.com:intellum/exceed.wiki.git
 git clone git@github.com:intellum/client_engineering.git
-keybase login
-run_keybase
 rsync -var /keybase/private/mtuckerb/github_dashboard/ ~/github_dashboard
 rsync -var /keybase/private/mtuckerb/ssh/ ~/.ssh
-rcup -d ~/.dotfiles
+
+# Setup github db
+cd $HOME/github_dashboard
+bundle exec rails db:create
+bundle exec rails db:migrate
+bundle exec rails db:data:load
 
