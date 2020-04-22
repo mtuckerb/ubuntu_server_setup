@@ -15,3 +15,12 @@ bundle exec rails db:create
 bundle exec rails db:migrate
 bundle exec rails db:data:load
 bundle exec rake graphql:schema:update
+
+
+read -p 'Do you want to install serverdensity?' yn
+select yn in "Yes" "No"; do
+  case $yn in
+      Yes ) /keybase/private/mtuckerb/install_intellum_sd_agent; break;;
+      No ) exit;;
+  esac
+done
