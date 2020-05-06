@@ -1,3 +1,7 @@
+yes | rcup -d ~/.dotfiles
+git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
+sudo chsh -s /usr/bin/zsh ubuntu
+cp -r bin ~
 cd ~
 keybase login
 run_keybase
