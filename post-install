@@ -13,6 +13,8 @@ git clone --depth=10 git@github.com:intellum/exceed.wiki.git
 git clone git@github.com:intellum/client_engineering.git
 rsync -var /keybase/private/mtuckerb/github_dashboard/ ~/github_dashboard
 rsync -var /keybase/private/mtuckerb/ssh/ ~/.ssh
+git clone git@github.com:appitierre/adaptr.git
+git clone git@github.com:appitierre/evolve.git
 
 # Setup github db
 cd $HOME/github_dashboard
