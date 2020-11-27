@@ -43,7 +43,7 @@ exuexuberant-ctags
 cd ~
 
 git clone git@github.com:mtuckerb/dotfiles.git .dotfiles
-sudo fallocate -l 1G /swapfile
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
+#sudo fallocate -l 1G /swapfile
+#sudo chmod 600 /swapfile
+#sudo mkswap /swapfile
+#sudo swapon /swapfile
