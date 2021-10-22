@@ -8,28 +8,6 @@ keybase login
 run_keybase
 rcup -d ~/.dotfiles
 
-git clone --depth=20 git@github.com:intellum/github_dashboard.git
-git clone --depth=10 git@github.com:intellum/exceed.wiki.git
-git clone git@github.com:intellum/client_engineering.git
-rsync -var /keybase/private/mtuckerb/github_dashboard/ ~/github_dashboard
 rsync -var /keybase/private/mtuckerb/ssh/ ~/.ssh
-git clone git@github.com:appitierre/adaptr.git
-git clone git@github.com:appitierre/evolve.git
-
-# Setup github db
-cd $HOME/github_dashboard
-bundle exec rails db:create
-bundle exec rails db:migrate
-bundle exec rails db:data:load
-bundle exec rake graphql:schema:update
-
-
-read -p 'Do you want to install serverdensity?' yn
-select yn in "Yes" "No"; do
-  case $yn in
-      Yes ) /keybase/private/mtuckerb/install_intellum_sd_agent; break;;
-      No ) exit;;
-  esac
-done
 
 aws configure
