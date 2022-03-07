@@ -84,8 +84,8 @@ function App() {
                     <Popup content="The number of times you expect to be donating on average per month. Once a week? Put 4. Once a day? Put 30." title="Subscription Plan" trigger={<Icon name="question circle"/>}/>
                     </label>
                   </Grid.Column>
-                  <Grid.Column width={5}>
-                    <Input labelPosition='left' label={{ basic: true, content: "Qty" }}  type='text' id="donations_per_month" onBlur={submitHandler} />
+                  <Grid.Column width={6}>
+                    <Input fluid labelPosition='left' label={{ basic: true, content: "Qty" }}  type='text' id="donations_per_month" onBlur={submitHandler} />
                   </Grid.Column>
                 </Grid.Row>
 
@@ -95,8 +95,8 @@ function App() {
                     <Popup content="The number of times you expect to be donating on average per month. Once a week? Put 4. Once a day? Put 30. " title="lbs per donation" trigger={<Icon name="question circle"/>}/>
                     </label>
                   </Grid.Column>
-                  <Grid.Column width={5} >
-                    <Input labelPosition='right' label={{ basic: true, content: "lbs" }} type='text' id="pounds_per_donation" onBlur={submitHandler} />
+                  <Grid.Column width={6} >
+                    <Input fluid labelPosition='right' label={{ basic: true, content: "lbs" }} type='text' id="pounds_per_donation" onBlur={submitHandler} />
                   </Grid.Column>
                 </Grid.Row>
 
@@ -106,8 +106,8 @@ function App() {
                     <Popup content="The cost associated with preparing and serving a menu item. This typically includes ingredients, but can also include labor costs, material costs, equipment costs, utilities, and energy (back of house). Please consult your finance team for accurate numbers." title="avg cost basis" trigger={<Icon name="question circle"/>}/>
                     </label>
                   </Grid.Column>
-                  <Grid.Column width={5}>
-                    <Input labelPosition='left' label={{ basic: true, content: "$" }} type='text' id="average_cost_basis" onBlur={submitHandler} />
+                  <Grid.Column width={6}>
+                    <Input fluid labelPosition='left' label={{ basic: true, content: "$" }} type='text' id="average_cost_basis" onBlur={submitHandler} />
                   </Grid.Column>
                 </Grid.Row>
 
@@ -118,8 +118,8 @@ function App() {
                       <Popup content="The price you sell the food to your customer (if applicable)." title="avg fmv" trigger={<Icon name="question circle"/>}/>
                     </label>
                   </Grid.Column>
-                  <Grid.Column width={5}>
-                    <Input labelPosition='left' label={{ basic: true, content: "$" }} type='text' id="average_fmv" onBlur={submitHandler} />
+                  <Grid.Column width={6}>
+                    <Input fluid labelPosition='left' label={{ basic: true, content: "$" }} type='text' id="average_fmv" onBlur={submitHandler} />
                   </Grid.Column>
                 </Grid.Row>
 
@@ -131,8 +131,8 @@ function App() {
                       <Popup content="The corporate tax rate in the United States is currently at a flat rate of 21%. Your tax percentage may vary depending if your business is registered as an S-Corp, Sole Proprietorship, LLC, etc. Please consult your tax advisor for an accurate percentage." title="corp tax rate" trigger={<Icon name="question circle"/>}/>
                     </label>
                   </Grid.Column>
-                  <Grid.Column width={5}>
-                    <Input placeholder="21" labelPosition='right' label={{ basic: true, content: "%" }} type='text' id="tax_rate" onBlur={submitHandler} />
+                  <Grid.Column width={6}>
+                    <Input fluid placeholder="21" labelPosition='right' label={{ basic: true, content: "%" }} type='text' id="tax_rate" onBlur={submitHandler} />
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
