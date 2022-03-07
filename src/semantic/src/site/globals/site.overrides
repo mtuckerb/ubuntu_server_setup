@@ -1,3 +1,80 @@
 /*******************************
          Site Overrides
 *******************************/
+body {
+    background: #EDEDED;
+    vertical-align: middle;
+}
+#main {
+    margin-top: 2rem;
+}
+
+#basic-plan {
+    color: black;
+}
+
+#plus-plan {
+    color: black
+}
+
+#inputSegment {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 32px;
+    background-color: #fff;
+}
+
+#resultsSegment {
+    margin: auto;
+    padding-top: 4rem; 
+    background-color: #479F7C;
+    height: 27em; 
+    width: 27em;
+}
+
+#savingsStat {
+    font-size: 6rem;
+    .sub.header {
+        font-size: 1.75rem; 
+        font-weight: bold;
+        color: #FCF154;
+    }
+    .sub.header.white {
+        font-weight: normal;
+        color: white;
+    }
+}
+
+#roiDiv {
+    text-align: center;
+    height: 4rem;
+    margin: auto; 
+    width: 14rem;
+    border-radius: 20px; 
+    background-color: #E8F6F2;
+    #ROIlabel {
+        color: black; 
+        line-height: 4rem; 
+        font-size: 1.75rem;
+    }
+    #ROIvalue {
+        color: #00A179; 
+        line-height: 4rem; 
+        font-size: 2.5rem;
+    }
+}
+
+#statsSegment {
+    top: -4rem; 
+    margin: auto; 
+    padding: 0;
+}
+label {
+    i.question.circle.icon {
+        color: #00A179;
+        padding-left: 5px;
+    }
+}
+.button-selected {
+    background: #479F7C !important;
+    color: white !important;
+}

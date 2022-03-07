@@ -5,16 +5,16 @@
 @orange         : #FE9A76;
 @yellow         : #FFD700;
 @olive          : #32CD32;
-@green          : #00A179;
-@teal           : #347380;
-@blue           : #245059;
+@green : #00A179;
+@teal : #347380;
+@blue : #245059;
 @violet         : #EE82EE;
 @purple         : #B413EC;
 @pink           : #FF1493;
 @brown          : #A52A2A;
-@grey           : #EDEDED;
-@black          : #143033;
-@white          : #FFFFFF;
+@grey : #EDEDED;
+@black : #143033;
+@white : #FFFFFF;
 
 
 @pageBackground: #E1E1E1;

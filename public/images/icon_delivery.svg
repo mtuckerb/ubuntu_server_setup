@@ -1,0 +1,13 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M50 100C22.5 100 0 77.5 0 50C0 22.5 22.5 0 50 0C77.5 0 100 22.5 100 50C100 77.5 77.5 100 50 100Z" fill="#E5F6F2"/>
+<path d="M35.7 52.1V54.9H29.9C29 54.9 28.2 54.6 27.6 53.9L25.7 52" stroke="#245059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.9001 66.6001V70.8001C22.9001 72.6001 24.4001 74.1001 26.3001 74.1001H32.4001C34.3001 74.1001 35.8001 72.6001 35.8001 70.8001V67.7001" stroke="#245059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M77.1 66.6001V70.8001C77.1 72.6001 75.6 74.1001 73.7 74.1001H67.6C65.7 74.1001 64.2 72.6001 64.2 70.8001V67.7001" stroke="#245059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M64.3 67.7001V61.6001H35.7V67.7001" stroke="#245059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.1001 42.5002L31.3001 30.3002C31.9001 28.4002 33.7001 27.2002 35.7001 27.2002H64.1001C66.1001 27.2002 67.9001 28.5002 68.5001 30.3002L72.7001 42.5002" stroke="#245059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.3 43.9002L34.7001 31.4002C34.9001 31.0002 35.3 30.7002 35.8 30.7002H64.2C64.7 30.7002 65.1001 31.0002 65.3001 31.4002L69.7 43.9002" stroke="#245059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M81.4001 39.4003H74.3001L72.3001 41.0003L72.8001 42.5003L68.6 44.3003C67 45.0003 65.3 45.3003 63.6 45.3003H36.3C34.5 45.3003 32.8001 44.9003 31.2001 44.2003L27.2001 42.4003L27.8 40.8003L25.8 39.3003H18.7001C17.9001 39.3003 17.3 39.9003 17.3 40.7003V43.5003C17.3 44.3003 17.9001 44.9003 18.7001 44.9003L24.4 46.3003L23 48.4003C22.1 49.8003 21.6 51.4003 21.6 53.1003V63.3003C21.6 65.6003 23.5 67.5003 25.9 67.5003H50H74.3001C76.7001 67.5003 78.6 65.6003 78.6 63.3003V53.2003C78.6 51.5003 78.1 49.9003 77.2 48.5003L75.8001 46.4003L81.5 45.0003C82.3 45.0003 82.9001 44.4003 82.9001 43.6003V40.8003C82.9001 40.0003 82.2001 39.4003 81.4001 39.4003Z" stroke="#245059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.3 46.4L27.1 42.5" stroke="#245059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M72.9001 42.5L76.1001 47" stroke="#245059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M64.3 52.1001V54.9001H71.4L74.3 52.1001" stroke="#245059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
